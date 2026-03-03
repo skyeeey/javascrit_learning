@@ -81,20 +81,8 @@ console.log(MIN([1,6,2,0.01,233]));
 
 
 
-
-
-
-
-
 - 字符串反转
 
-function reverse(array){
-
-    for(i=0; i<array.length; i++){
-
-
-    }
-}
 
 function reverseString(str){
     let result = "";
@@ -109,4 +97,15 @@ function reverseString(str){
 console.log(reverseString("hello"));
 
 
-- 判断是否回文
+// 输入数组，返回最大值
+function MAXIMUM (array){
+    let maxx = array[0];
+    for (i=0; i<array.length; i++){
+        if (maxx<array[i]){
+            maxx = array[i];
+        }
+    } 
+    return maxx;
+}
+console.log(MAXIMUM([1,2,4,8,10]));
+
